@@ -1,0 +1,44 @@
+body{
+    background-image: url(background.jpg);
+    overflow-x: hidden;
+    background-size: cover;
+}
+.container{
+    display: flex;
+}
+button{
+    height: 100px;
+    width: 300px;
+    border-radius: 40px;
+    font-family: Arial, sans-serif;
+    background-color: transparent;
+    border: 5px solid rgb(187, 62, 181);
+    color: white;
+    font-size: 30px;
+}
+button:hover{
+    background-color: rgb(187, 62, 181);
+    cursor: pointer;
+}
+.first{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.images2{
+    float: right;
+}
+.images{
+    float:left;
+    animation: move infinite ease-in;
+}
+@keyframes move{
+ 0% { transform: translateX(-50px) ; }
+  50% { transform: translateX(50px) ; }
+  100% { transform: translateX(-50px) ; }
+}
